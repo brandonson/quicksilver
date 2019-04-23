@@ -4,7 +4,7 @@ use crate::{
 };
 
 /// The structure responsible for managing the game loop state
-pub trait State: 'static {
+pub trait State {
     /// Create the state given the window and canvas
     fn new() -> Result<Self> where Self: Sized;
     /// Tick the State forward one frame
